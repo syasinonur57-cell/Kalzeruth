@@ -1,4 +1,4 @@
-const socket = io("https://kalzeruth-production.up.railway.app");
+const socket = io(); // İçerisi tamamen boş kalacak, otomatik algılayacak.
 
 // Elemanlar
 const btnCreate = document.getElementById('btn-create');
