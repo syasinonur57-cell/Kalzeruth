@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Lobby System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- GİRİŞ EKRANI -->
+        <div id="login-screen" class="card">
+            <h2>Giriş Yap</h2>
+            <input type="text" id="username" placeholder="Oyuncu Adı Girin...">
+            <div class="button-group">
+                <button id="btn-create" class="btn btn-primary">Lobi Kur</button>
+                <button id="btn-join" class="btn btn-secondary">Lobiye Katıl</button>
+            </div>
+            <input type="text" id="lobby-code-input" placeholder="Lobi Kodu (Katılmak için)..." class="hidden">
+        </div>
+
+        <!-- LOBİ EKRANI (Başlangıçta gizli olacak, sonra açacağız) -->
+        <div id="lobby-screen" class="card hidden">
+            <div class="lobby-header">
+                <h2>LOBİ <span id="lobby-code-display">#XXXXX</span></h2>
+            </div>
+            
+            <!-- Oyuncu Slotları (CS/Valorant gibi yan yana veya alt alta kartlar) -->
+            <div id="player-list">
+                
+                </div>
+            </div>
+
+            <div class="lobby-actions">
+                <button id="btn-ready" class="btn btn-success">HAZIR VER</button>
+                <button id="btn-leave" class="btn btn-danger">LOBİDEN ÇIK</button>
+            </div>
+        </div>
+  </div> <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
