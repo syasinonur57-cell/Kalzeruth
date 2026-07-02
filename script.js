@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io("https://kalzeruth-production.up.railway.app");
 
 // Elemanlar
 const btnCreate = document.getElementById('btn-create');
